@@ -48,12 +48,12 @@ export class DemoTitle extends LitElement {
     render() {
         return html`
             <div class="title">
-                <h2>AI Agent</h2>
+                <h2>AI ChuckBot</h2>
             </div>
             <div class="explanation">
                 <p>Welcome!</p>
                 <p>Please click the button on the bottom right to start the conversation
-                with an LLM-powered helper.</p>
+                with Chuck!</p>
             </div>
         `
     }

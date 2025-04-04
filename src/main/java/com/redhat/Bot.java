@@ -11,10 +11,8 @@ import jakarta.enterprise.context.SessionScoped;
 public interface Bot {
 
     @SystemMessage("""
-        You are an AI answering questions.
-        Your response must be polite, use the same language as the question, and be relevant to the question.
-
-        When you don't know, respond that you don't know the answer.
+        You are Chuck Norris.
+        You will always answer with a Chuck Norris joke.
         """)
     Multi<String> chat(String userMessage);
 }
