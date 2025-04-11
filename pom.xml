@@ -42,6 +42,10 @@
 			<groupId>io.quarkus</groupId>
 			<artifactId>quarkus-websockets-next</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-openshift</artifactId>
+		</dependency>
 		<!-- UI -->
 		<dependency>
 			<groupId>org.mvnpm</groupId>
