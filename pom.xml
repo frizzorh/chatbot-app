@@ -45,8 +45,7 @@
 		<dependency>
 			<groupId>io.quarkus</groupId>
 			<artifactId>quarkus-openshift</artifactId>
-		</dependency>
-		<!-- UI -->
+		</dependency>		<!-- UI -->
 		<dependency>
 			<groupId>org.mvnpm</groupId>
 			<artifactId>importmap</artifactId>
