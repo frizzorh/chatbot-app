@@ -4,10 +4,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>redhat.janus</groupId>
-	<artifactId>chatbot-app</artifactId>
+	<artifactId>chuck-app</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>chatbot-app</name>
-	<description>A cool quarkus chatbot app</description>
+	<name>chuck-app</name>
+	<description>A cool quarkus chuckbot app</description>
 	<properties>
 		<maven.compiler.release>21</maven.compiler.release>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
