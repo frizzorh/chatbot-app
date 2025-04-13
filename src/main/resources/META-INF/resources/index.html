@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="image/png" href="favicon.ico">
 
     <script src="/_importmap/dynamic-importmap.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script type="module">
         import 'icons/font-awesome.js';
         import 'components/demo-title.js';
@@ -25,14 +25,15 @@
         }
 
         body {
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* centrare orizzontalmente */
+            align-items: center; /* centrare verticalmente */
+            flex-direction: column;
             margin: 0;
             width: 100%;
-            height: 100vh;
             font-family: 'Red Hat Text', sans-serif;
             overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             color: var(--lumo-body-text-color);
             background: var(--main-bg-color);
         }
@@ -64,10 +65,26 @@
             display: flex;
         }
 
+        #qrcode {
+            margin-top: 20px;
+        }
     </style>
 </head>
 
 <body>
+
+<div id="qrcode">
+    <script>
+        const url = window.location.href;
+        if (url.indexOf("localhost") === -1) {
+            new QRCode(document.getElementById("qrcode"), {
+                text: url,
+                width: 200,
+                height: 200,
+            });
+        }
+    </script>
+</div>
 
 <demo-title></demo-title>
 
